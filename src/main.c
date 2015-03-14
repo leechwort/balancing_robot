@@ -34,10 +34,8 @@ int main(void)
 
     USART_Config();
 
-    //at_res = ESP_TCP_StartServer();
-    double value = 1.5;
-    sscanf("0.67548","%G",&value);
-    int j;
+    at_res = ESP_TCP_StartServer();
+
     //proceedSocketData();
 
 

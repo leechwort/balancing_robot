@@ -52,7 +52,7 @@ bool is_running = false;
 
 // PWM value
 int pwm = 0;
-
+float angle = 0;
 
 
 void Delay_communication()
@@ -311,12 +311,12 @@ AT_RESULT ESP_TCP_StartServer()
     at_res = ESP_SetCommand("AT+CIPSERVER=1,8888\r\n");
     if (at_res == OK)
     {
-        LCD_PrintString("TCP OK!");
+        LCD_PrintString("TCP SERVER OK!");
         Delay_communication();
     }
     else
     {
-        LCD_PrintString("TCP ERR!");
+        LCD_PrintString("TCP SERVER ERR!");
         return ERR;
     }
 
@@ -374,7 +374,7 @@ bool proceedSocketData()
     char STOP_COM[] = "STOP";
     char SET_PID[] = "SET_PID:";
     char SET_PWM[] = "SET_PWM:";
-
+    char SET_ANGLE[] = "SET_ANGLE:";
 
 
     const uint8_t data_offset = 7;
@@ -421,12 +421,17 @@ bool proceedSocketData()
 
     if (strstr(data_string, SET_PID) != NULL)
     {
-        double value = 12.34;
-        sscanf(data_string,"SET_PID:%e",&value);
-        //sscanf(data_string,"SET_PID:%d",&value);
-        int j = 0;
+        sscanf(data_string,"SET_PID:%f,%f,%f", &P, &I, &D);
+    }
+    if (strstr(data_string, SET_PWM) != NULL)
+    {
+        sscanf(data_string, "SET_PWM:%d", &pwm);
     }
 
+    if (strstr(data_string, SET_ANGLE) != NULL)
+    {
+        sscanf(data_string, "SET_ANGLE:%f",&angle);
+    }
     return true;
 }
 

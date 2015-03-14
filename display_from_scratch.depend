@@ -246,7 +246,7 @@
 	"stm32f4xx_rcc.h"
 	<stddef.h>
 
-1426191299 source:c:\emblocks\display_from_scratch\src\main.c
+1426333165 source:c:\emblocks\display_from_scratch\src\main.c
 	"stm32f4xx_conf.h"
 	"hd44780.h"
 	"communication.h"
@@ -261,7 +261,7 @@
 1426193673 c:\emblocks\display_from_scratch\inc\communication.h
 	<stdbool.h>
 
-1426199264 source:c:\emblocks\display_from_scratch\src\communication.c
+1426333208 source:c:\emblocks\display_from_scratch\src\communication.c
 	<string.h>
 	"communication.h"
 	"stm32f4xx_gpio.h"
