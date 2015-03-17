@@ -246,10 +246,12 @@
 	"stm32f4xx_rcc.h"
 	<stddef.h>
 
-1426333165 source:c:\emblocks\display_from_scratch\src\main.c
+1426626261 source:c:\emblocks\display_from_scratch\src\main.c
 	"stm32f4xx_conf.h"
 	"hd44780.h"
 	"communication.h"
+	"motor_control.h"
+	"MPU6050.h"
 
 1421521171 source:c:\emblocks\display_from_scratch\src\startup_stm32f4xx.s
 
@@ -261,7 +263,7 @@
 1426193673 c:\emblocks\display_from_scratch\inc\communication.h
 	<stdbool.h>
 
-1426333208 source:c:\emblocks\display_from_scratch\src\communication.c
+1426333614 source:c:\emblocks\display_from_scratch\src\communication.c
 	<string.h>
 	"communication.h"
 	"stm32f4xx_gpio.h"
@@ -284,4 +286,26 @@
 	<stdio.h>
 	<string>
 	"hd44780.h"
+
+1419904849 source:c:\emblocks\display_from_scratch\src\mpu6050.c
+	"MPU6050.h"
+	"stm32f4xx_i2c.h"
+
+1426335506 c:\emblocks\display_from_scratch\inc\mpu6050.h
+	"HAL_MPU6050.h"
+	<stdbool.h>
+
+1419904849 c:\emblocks\display_from_scratch\inc\hal_mpu6050.h
+	"stm32f4xx.h"
+	"stm32f4xx_gpio.h"
+	"stm32f4xx_rcc.h"
+	"stm32f4xx_i2c.h"
+
+1426627049 c:\emblocks\display_from_scratch\inc\motor_control.h
+	"stm32f4xx_gpio.h"
+	"stm32f4xx_tim.h"
+	"stm32f4xx_rcc.h"
+
+1426627023 source:c:\emblocks\display_from_scratch\src\motor_control.c
+	"motor_control.h"
 

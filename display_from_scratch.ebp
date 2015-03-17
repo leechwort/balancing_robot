@@ -202,8 +202,11 @@
 		<Unit filename="cmsis\core_cm4_simd.h" />
 		<Unit filename="cmsis\core_cmFunc.h" />
 		<Unit filename="cmsis\core_cmInstr.h" />
+		<Unit filename="inc\HAL_MPU6050.h" />
+		<Unit filename="inc\MPU6050.h" />
 		<Unit filename="inc\communication.h" />
 		<Unit filename="inc\hd44780.h" />
+		<Unit filename="inc\motor_control.h" />
 		<Unit filename="inc\stm32f4xx.h" />
 		<Unit filename="inc\stm32f4xx_conf.h" />
 		<Unit filename="inc\system_stm32f4xx.h" />
@@ -241,9 +244,13 @@
 		<Unit filename="obj\Debug\src\communication.d" />
 		<Unit filename="obj\Debug\src\hd44780.d" />
 		<Unit filename="obj\Debug\src\main.d" />
+		<Unit filename="obj\Debug\src\mpu6050.d" />
 		<Unit filename="obj\Debug\src\startup_stm32f4xx.d" />
 		<Unit filename="obj\Debug\src\system_stm32f4xx.d" />
 		<Unit filename="readme.txt" />
+		<Unit filename="src\MPU6050.c">
+			<Option compilerVar="CC" />
+		</Unit>
 		<Unit filename="src\communication.c">
 			<Option compilerVar="CC" />
 		</Unit>
@@ -251,6 +258,9 @@
 			<Option compilerVar="CC" />
 		</Unit>
 		<Unit filename="src\main.c">
+			<Option compilerVar="CC" />
+		</Unit>
+		<Unit filename="src\motor_control.c">
 			<Option compilerVar="CC" />
 		</Unit>
 		<Unit filename="src\startup_stm32f4xx.S">
