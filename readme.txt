@@ -1,3 +1,4 @@
+Test
 You have to set the correct memory layout for your device in the linker script.
 Please check the FLASH and SRAM length.
 
